@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="topbar">
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+            <a href="#">ShopNow</a>
+        </p>
+        <select>
+            <option>English</option>
+            <option>Hindi</option>
+        </select>
+    </div>
+
+    <!-- ===== DESKTOP NAVBAR ===== -->
+    <header class="navbar">
+        <div class="logo">Exclusive</div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Sign Up</a>
+        </nav>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="What are you looking for?">
+                <i class="fa fa-search"></i>
+            </div>
+
+            <i class="fa-regular fa-heart"></i>
+            <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <!-- Hamburger -->
+            <i class="fa fa-bars menu-toggle" onclick="openMenu()"></i>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE SIDEBAR ===== -->
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <h2>Exclusive</h2>
+            <i class="fa fa-xmark" onclick="closeMenu()"></i>
+        </div>
+
+        <a href="#" onclick="closeMenu()">Home</a>
+        <a href="#" onclick="closeMenu()">Contact</a>
+        <a href="#" onclick="closeMenu()">About</a>
+        <a href="#" onclick="closeMenu()">Sign Up</a>
+
+        <hr>
+
+        <div class="mobile-extra">
+            <p><i class="fa-regular fa-heart"></i> Wishlist</p>
+            <a href="/cart.html"><p><i class="fa-solid fa-cart-shopping"></i> Cart</p></a>
+            <p><i class="fa-solid fa-user"></i> Account</p>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="main-section">
+
+        <aside class="categories">
+            <ul>
+                <li>Woman’s Fashion <i class="fa fa-chevron-right"></i></li>
+                <li>Men’s Fashion <i class="fa fa-chevron-right"></i></li>
+                <li>Electronics</li>
+                <li>Home & Lifestyle</li>
+                <li>Medicine</li>
+                <li>Sports & Outdoor</li>
+                <li>Baby’s & Toys</li>
+                <li>Groceries & Pets</li>
+                <li>Health & Beauty</li>
+            </ul>
+        </aside>
+
+        <div class="hero">
+            <div class="hero-text">
+                <h4><i class="fa-brands fa-apple"></i> iPhone 14 Series</h4>
+                <h1>Up to 10% <br> off Voucher</h1>
+                <a href="#" class="shop-btn">Shop Now →</a>
+            </div>
+
+            <div class="hero-img">
+                <img src="/images/iphone_2.png">
+            </div>
+
+            <div class="dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===== PRODUCT SECTION ===== -->
+    <section class="section-product">
+
+        <div class="product-header">
+            <div class="flash-title">
+                <span class="today-tag">Today's</span>
+                <h2>Flash Sales</h2>
+            </div>
+
+            <div class="countdown">
+                <div><span id="days">03</span>
+                    <p>Days</p>
+                </div>
+                <div><span id="hours">23</span>
+                    <p>Hours</p>
+                </div>
+                <div><span id="minutes">19</span>
+                    <p>Minutes</p>
+                </div>
+                <div><span id="seconds">56</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+
+            <div class="slider-btns">
+                <button id="prev"><i class="fa fa-arrow-left"></i></button>
+                <button id="next"><i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="product-container" id="productContainer">
+
+            <!-- CARD -->
+            <div class="product-card">
+                <span class="discount">-40%</span>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <img src="/images/gamepad.jpg">
+                <button class="add-cart" data-id="1" data-name="HAVIT HV-G92 Gamepad" data-price="120" data-img="/images/gamepad.jpg">Add To Cart</button>
+                <h4>HAVIT HV-G92 Gamepad</h4>
+                <div class="price">
+                    <span class="new">$120</span>
+                    <span class="old">$160</span>
+                </div>
+                <div class="rating">★★★★★ (88)</div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-35%</span>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <img src="/images/keyboard.jpg">
+                <button class="add-cart" data-id="2" data-name="AK-900 Wired Keyboard" data-price="960" data-img="/images/keyboard.jpg">Add To Cart</button>
+                <h4>AK-900 Wired Keyboard</h4>
+                <div class="price">
+                    <span class="new">$960</span>
+                    <span class="old">$1160</span>
+                </div>
+                <div class="rating">★★★★★ (75)</div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <img src="/images/monitor.jpg">
+                <button class="add-cart" data-id="3" data-name="IPS LCD Gaming Monitor" data-price="370" data-img="/images/monitor.jpg">Add To Cart</button>
+                <h4>IPS LCD Gaming Monitor</h4>
+                <div class="price">
+                    <span class="new">$370</span>
+                    <span class="old">$400</span>
+                </div>
+                <div class="rating">★★★★★ (99)</div>
+            </div>
+
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <img src="/images/chair.jpg">
+                <button class="add-cart" data-id="4" data-name="S- seies Gaming Chair" data-price="375" data-img="/images/chair.jpg">Add To Cart</button>
+                <h4>S- seies Gaming Chair</h4>
+                <div class="price">
+                    <span class="new">$375</span>
+                    <span class="old">$400</span>
+                </div>
+                <div class="rating">★★★★★ (99)</div>
+            </div>
+
+        </div>
+
+        <div class="view-btn">
+            <button>View All Products</button>
+        </div>
+
+    </section>
+
+    <!-- ===== CATEGORY SECTION ===== -->
+    <section class="category-section">
+
+        <div class="category-header">
+            <div>
+                <span class="category-tag">Categories</span>
+                <h2>Browse By Category</h2>
+            </div>
+
+            <div class="cat-arrows">
+                <button class="cat-prev"><i class="fa fa-arrow-left"></i></button>
+                <button class="cat-next"><i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>Phones</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-desktop"></i>
+                <p>Computers</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-clock"></i>
+                <p>SmartWatch</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-camera"></i>
+                <p>Camera</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-headphones"></i>
+                <p>HeadPhones</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-gamepad"></i>
+                <p>Gaming</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== SERVICE FEATURES ===== -->
+    <section class="service-section">
+
+        <div class="service-container">
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <h3>FREE AND FAST DELIVERY</h3>
+                <p>Free delivery for all orders over $140</p>
+            </div>
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3>24/7 CUSTOMER SERVICE</h3>
+                <p>Friendly 24/7 customer support</p>
+            </div>
+
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>MONEY BACK GUARANTEE</h3>
+                <p>We return money within 30 days</p>
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Column 1 -->
+            <div class="footer-col">
+                <h2>Exclusive</h2>
+                <h4>Subscribe</h4>
+                <p>Get 10% off your first order</p>
+
+                <!-- email form -->
+                <form id="subscribeForm" class="subscribe-box">
+                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h3>Support</h3>
+                <p>111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.</p>
+                <p>exclusive@gmail.com</p>
+                <p>+88015-88888-9999</p>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h3>Account</h3>
+                <a href="#">My Account</a>
+                <a href="#">Login / Register</a>
+                <a href="#">Cart</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Shop</a>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+                <h3>Quick Link</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Column 5 -->
+            <div class="footer-col">
+                <h3>Download App</h3>
+                <div class="app-download">
+
+                    <!-- QR -->
+                    <div class="qr-box">
+                        <img style="height:40px;width:40px;" src="images/qr-code.png" alt="QR Code">
+                    </div>
+
+                    <!-- store buttons -->
+                    <div class="store-buttons">
+
+
+                        <a href="https://play.google.com/store" target="_blank" class="store-btn">
+                            <div style="display: flex; gap: 10px;">
+                                <div>
+                                    <small>GET IT ON</small>
+                                    <p>Google Play</p>
+                                </div>
+                                <div style="margin-top: 10px"><i class="fa-brands fa-google-play"></i></div>
+                            </div>
+                        </a>
+
+
+                        <a href="https://www.apple.com/app-store/" target="_blank" class="store-btn">
+                            <div style="display: flex; gap: 10px;">
+
+                                <div>
+                                    <small>Download on the</small>
+                                    <p>App Store</p>
+                                </div>
+                                <div style="margin-top: 10px"><i class="fa-brands fa-apple"></i></div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <p>Save $3 with App New User Only</p>
+
+                <div class="social-icons">
+                    <a href="https://github.com/umra3852-png" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://twitter.com/YOUR_LINK" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="https://instagram.com/YOUR_LINK" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © Copyright 2026. All rights reserved
+        </div>
+
+    </footer>
+
+
+   
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
